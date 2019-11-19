@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day2Day</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Welcome to Day2Day</h1>
+
+<table>
+    <th>Date</th>
+    <% headArr.forEach((time) => { %>
+      <th><%= time %></th>
+      <% }) %>
+
+    <% obj.forEach((element) => { %>
+    <%- include('table', {date: element.date, type: element.type}) %>
+      <% }) %>
+</table>
+<br>
+<div>
+  <form action="/addtime" method="POST">
+  Date:
+  <input type="text" name="date" placeholder="DATE">
+  Time:
+  <input type="text" name="time" placeholder="TIME">
+  <br>
+  Type:
+  <select name="type">
+    <option value="social">Social</option>
+    <option value="sleep">Sleep</option>
+    <option value="coding">Coding</option>
+    <option value="useful">Useful</option>
+    <option value="waste">Waste</option>
+    <option value="youtube">YouTube</option>
+    <option value="transport">Transport</option>
+    <option value="college">College</option>
+    <option value="needs">Basic Needs</option>
+  </select>
+  <br>
+  <button type="submit">Submit</button>
+  </form>
+</div>
+<!-- Legend -->
+<div class="legend">
+<table class="legend">
+  <tr>
+    <th>Color</th>
+    <th>Defenition</th>
+  </tr>
+  <tr>
+    <td class="social"></td>
+    <td>Socialization</td>
+  </tr>
+  <tr>
+    <td class="sleep"></td>
+    <td>Sleep</td>
+  </tr>
+  <tr>
+    <td class="coding"></td>
+    <td>Coding</td>
+  </tr>
+    <td class="useful"></td>
+    <td>Anything Useful</td>
+  </tr>
+  <tr>
+    <td class="waste"></td>
+    <td>Waste</td>
+  </tr>
+  <tr>
+    <td class="youtube"></td>
+    <td>YouTube</td>
+  </tr>
+  <tr>
+    <td class="transport"></td>
+    <td>Transportation</td>
+  </tr>
+  <tr>
+    <td class="college"></td>
+    <td>College</td>
+  </tr>
+  <tr>
+    <td class="needs"></td>
+    <td>Basic Needs</td>
+  </tr>
+</table>
+</div>
+  </body>
+</html>

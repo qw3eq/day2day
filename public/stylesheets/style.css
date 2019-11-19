@@ -1,0 +1,90 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+table.legend {
+  border: 1px solid black;
+  width: 35%;
+  height: 20px;
+  text-align: left;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 10px;
+  text-align: center;
+}
+
+td.date {
+  width: 50px;
+  font-size: 12px;
+}
+
+.blank .date {
+  background-color: white;
+  
+}
+
+.social {
+  background-color: #66ff66;
+}
+
+.sleep {
+  background-color: #b3b3b3;
+}
+
+.coding {
+  background-color: #4db8ff;
+}
+
+.useful {
+  background-color: #e6e600;
+}
+
+.waste {
+  background-color: #86592d;
+}
+
+.youtube {
+  background-color: #2d862d;
+}
+
+.transport {
+  background-color: #5900b3;
+}
+
+.college {
+  background-color: #b82e8a;
+}
+
+.needs {
+  background-color: #ff9999;
+}
+
+div.legend {
+  margin: 50px;
+}
+
+button, form, input, select{
+  margin: 15px;
+}
